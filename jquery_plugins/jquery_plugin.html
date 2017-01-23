@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  我是myPluginName
+  <p>
+    <a href="">我是myPluginName1</a>
+  </p>
+  <div>我是myPluginName2</div>
+  <h1>我是myPluginName3</h1>
+</body>
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src='./jquery_plugin.js'></script>
+<script type = 'text/javascript'>
+  $.sayHello('dongshabi');
+  $('body').myPluginName();
+  $('a').myPluginName1();
+  $('div').myPluginName2({
+    color:'#333',
+    fontSize:'28px',
+  });
+  $('h1').myPluginName3({
+    'fontWeight':'900',
+    'color':'blue',
+    'fontSize':'33px',
+    'textDecoration':'line-through',
+    'fontFamily':'宋体'
+  });
+</script>
+</html>
